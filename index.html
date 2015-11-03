@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="turnaround.js"></script>
+<style type="text/css">
+div{position: absolute; left: 0; top: 0}
+img{ position: absolute;left: 400px; top: 100px; width: 200px; height: 200px}
+</style>
+</head>
+<body>
+<div class="wrapper">
+   <img class="img-rounded" src='andy.jpg' >
+</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+$(function(){
+	$('body').click(function(){
+		$('.img-rounded').turnaroundHide(function(){alert(1111)},function(){alert(223)},'portrait','andy.jpg')
+	})
+      
+})
+  
+</script>
